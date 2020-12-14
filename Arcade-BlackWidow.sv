@@ -336,8 +336,7 @@ hps_io #(.STRLEN($size(CONF_STR)>>3)) hps_io
 
 	.joystick_0(joy_0_USB),
 	.joystick_1(joy_1_USB),
-	.joy_raw(joydb_1[5:0]),
-	.ps2_key(ps2_key)
+	.joy_raw(joydb_1[5:0])
 );
 
 reg mod_bwidow     = 0;
