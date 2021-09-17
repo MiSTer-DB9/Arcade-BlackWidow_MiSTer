@@ -18,7 +18,8 @@ set_global_assignment -name VHDL_FILE rtl/pkg_bwidow.vhd
 set_global_assignment -name VHDL_FILE rtl/pgmrom.vhd
 set_global_assignment -name VHDL_FILE rtl/earom.vhd
 set_global_assignment -name VHDL_FILE rtl/bwidow.vhd
-set_global_assignment -name SYSTEMVERILOG_FILE "rtl/hiscore.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "rtl/hiscore.v"
+set_global_assignment -name SYSTEMVERILOG_FILE "rtl/pause.v"
 set_global_assignment -name SYSTEMVERILOG_FILE "Arcade-BlackWidow.sv"
 set_global_assignment -name VERILOG_FILE joydb9md.v
 set_global_assignment -name VERILOG_FILE joydb15.v
