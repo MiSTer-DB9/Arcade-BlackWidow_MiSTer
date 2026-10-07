@@ -210,10 +210,10 @@ wire reset = (RESET | status[0] | buttons[1] | rom_download);
 
 // CO S2 S1 F4 F3 F2 F1 U D L R
 // [MiSTer-DB9-Pro BEGIN] - DB controllers muted while OSD is open
-wire [31:0] joy_0 = joydb_1ena ? (OSD_STATUS ? 32'b0 : joydb_1_mapped[10:0]) : joy_0_USB;
+wire [31:0] joy_0 = joydb_1ena ? (OSD_STATUS ? 32'b0 : joydb_1_mapped[12:0]) : joy_0_USB;
 // [MiSTer-DB9-Pro END]
 // [MiSTer-DB9-Pro BEGIN] - DB controllers muted while OSD is open
-wire [31:0] joy_1 = joydb_2ena ? (OSD_STATUS ? 32'b0 : joydb_2_mapped[10:0]) : joydb_1ena ? joy_0_USB : joy_1_USB;
+wire [31:0] joy_1 = joydb_2ena ? (OSD_STATUS ? 32'b0 : joydb_2_mapped[12:0]) : joydb_1ena ? joy_0_USB : joy_1_USB;
 // [MiSTer-DB9-Pro END]
 
 wire hblank, vblank;
